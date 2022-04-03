@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "./Button";
-import { LogInButton } from "./LogInButton";
+import { Button } from "./buttons/Button";
+import { LogInButton } from "./buttons/LogInButton";
+import { CartButton } from "./buttons/CartButton";
 import { Link } from "react-router-dom";
+
 import "./Navbar.css";
 
 function Navbar() {
@@ -74,11 +76,21 @@ function Navbar() {
                 Log In
               </Link>
             </li>
+            <li>
+              <Link
+                to="/Cart"
+                className="nav-links-mobile"
+                onClick={closeMobileMenu}
+              >
+                Cart
+              </Link>
+            </li>
           </ul>
           {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
           {button && (
             <LogInButton buttonStyle="btn--outline">lOG IN</LogInButton>
           )}
+          {button && <CartButton buttonStyle="btn--outline">Cart</CartButton>}
         </div>
       </nav>
     </>

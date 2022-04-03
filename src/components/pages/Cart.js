@@ -3,7 +3,7 @@ import "../../App.css";
 
 import Footer from "../Footer";
 
-export default function LogIn() {
+export default function Cart() {
   return (
     <>
       <Footer />

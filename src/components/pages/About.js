@@ -1,13 +1,13 @@
 import React from "react";
 import "../../App.css";
-import Explain from "../Explain";
+import AboutMe from "../sections/AboutMe";
 
 import Footer from "../Footer";
 
 export default function About() {
   return (
     <>
-      <Explain />
+      <AboutMe />
 
       <Footer />
     </>
