@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./SignUpForm.css";
 import { useState } from "react";
 import axios from "axios";
@@ -45,57 +45,66 @@ const SignUpForm = () => {
   };
 
   return (
-    <form className="form-container" onSubmit={handleSignup}>
-      <label className="form-inputs">
-        Enter your name:
-        <input
-          type="text"
-          className="form-control"
-          id="exampleInputName"
-          value={name}
-          onChange={handleNameCHange}
-        />
-      </label>
-      <label className="form-inputs">
-        Enter your Email:
-        <input
-          type="email"
-          className="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-          value={email}
-          onChange={handleEmailChange}
-        />
-      </label>
-      <label className="form-inputs">
-        Enter your Password:
-        <input
-          type="password"
-          className="form-control"
-          id="exampleInputPassword1"
-          value={password}
-          onChange={handlePasswordChange}
-        />
-      </label>
-      <label className="form-inputs">
-        Conform your Password:
-        <input
-          type="password"
-          className="form-check-input"
-          id="exampleCheck1"
-          onChange={handleBizChange}
-          checked={biz}
-        />
-      </label>
-      <label className="form-check-label" htmlFor="exampleCheck1">
-        Biz?
-        <input type="checkbox" />
-      </label>
+    <Fragment className="container">
+      <video src="/videos/video-1.mp4" autoPlay loop muted />
+      <form className="form-container" onSubmit={handleSignup}>
+        <h1 className="title">Sign up And Take a Part From The Future</h1>
+        <label className="form-inputs">
+          Name:
+          <input
+            type="text"
+            className="form-control"
+            id="exampleInputName"
+            value={name}
+            onChange={handleNameCHange}
+          />
+        </label>
+        <br />
+        <label className="form-inputs">
+          Email:
+          <input
+            type="email"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            value={email}
+            onChange={handleEmailChange}
+          />
+        </label>
+        <br />
+        <label className="form-inputs">
+          Password:
+          <input
+            type="password"
+            className="form-control"
+            id="exampleInputPassword1"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </label>
+        <br />
+        <label className="form-inputs">
+          Password:
+          <input
+            type="password"
+            className="form-check-input"
+            id="exampleCheck1"
+            onChange={handleBizChange}
+            checked={biz}
+          />
+        </label>
+        <br />
+        <label className="form-check-label" htmlFor="exampleCheck1">
+          Biz?
+          <input type="checkbox" className="check-mark" />
+        </label>
+        <br />
 
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
-    </form>
+        <button type="submit" className="primary">
+          Sign up
+        </button>
+      </form>
+    </Fragment>
   );
 };
 
