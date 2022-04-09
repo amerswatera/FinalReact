@@ -1,1 +1,14 @@
-
+.btn-1 {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 0 350px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+.inputs {
+  color: #f1f1f1;
+  margin-left: 350px;
+}
