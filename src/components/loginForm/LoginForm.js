@@ -71,8 +71,15 @@ const LogInForm = () => {
   };
 
   return (
-    <form onSubmit={handleOnSubmit}>
-      <video src="/videos/video-3.mp4" autoPlay loop muted />
+    <form className="container-1" onSubmit={handleOnSubmit}>
+      <video
+        className="background-1"
+        src="/videos/video-3.mp4"
+        autoPlay
+        loop
+        muted
+      />
+      <h1 className="title">Log In</h1>
       <label className="inputs" htmlFor="email">
         Email:
       </label>

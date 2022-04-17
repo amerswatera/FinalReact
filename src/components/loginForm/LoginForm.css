@@ -12,3 +12,12 @@
   color: #f1f1f1;
   margin-left: 350px;
 }
+@media screen and (max-width: 300px) {
+  .inputs,
+  #email,
+  .background-1,
+  .btn-1 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
