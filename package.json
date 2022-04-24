@@ -20,6 +20,7 @@
     "react-scripts": "3.4.1",
     "react-toast": "^1.0.3",
     "react-toastify": "^8.2.0",
+    "react-use-cart": "^1.13.0",
     "use-history": "^1.4.1"
   },
   "scripts": {

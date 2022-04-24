@@ -8,7 +8,8 @@ import About from "./components/pages/About";
 import Products from "./components/pages/Products";
 import SignUp from "./components/pages/SignUp";
 import LogIn from "./components/pages/LogIn";
-import Cart from "./components/pages/Cart";
+
+import Shop from "./components/pages/Shop";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/products" component={Products} />
           <Route path="/sign-up" component={SignUp} />
           <Route path="/log-in" component={LogIn} />
-          <Route path="/Cart" component={Cart} />
+          <Route path="/Cart" component={Shop} />
         </Switch>
       </Router>
     </>
